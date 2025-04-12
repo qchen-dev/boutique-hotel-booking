@@ -1,12 +1,84 @@
-# React + Vite
+# Boutique Hotel Booking Management App 🏨
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and stylish hotel booking application built with React and powered by Supabase.  
+Easily manage cabins, guests, bookings, and more — perfect for boutique stays and smaller properties.
 
-Currently, two official plugins are available:
+## ✨ Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- ⚛️ **React** – UI library
+- 🚦 **React Router** – Routing and navigation
+- 💅 **Styled Components** – Component-level styling
+- 📦 **React Query** – Data fetching and caching
+- 🧠 **Context API** – Global state management
+- 📝 **React Hook Form** – Forms and validation
+- 🛠️ **Supabase** – Backend-as-a-service (database & auth)
+- ⚡ **Vite** – Fast frontend tooling
 
-## Expanding the ESLint configuration
+## 🚀 Getting Started
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Follow the steps below to install and run the project locally.
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/qchen-dev/boutique-hotel-booking.git
+cd boutique-hotel-booking
+```
+
+### 2. Install Dependencies
+
+```bash
+npm install
+```
+
+### 3. Start the Development Server
+
+```bash
+npm run dev
+```
+
+The app will be available at http://localhost:5173.
+
+## 📁 Project Structure
+
+```bash
+src/
+│
+├── features/         # Feature-based folders (e.g. bookings, cabins)
+├── services/         # API service functions
+├── ui/               # Reusable UI components
+├── context/          # Context API providers
+├── hooks/            # Custom hooks
+├── pages/            # Top-level routed pages
+├── data/             # Static data or constants
+├── styles/           # Global styles and theme definitions
+├── utils/            # Utility functions and helpers
+│
+├── App.jsx           # Main app layout with routes
+└── main.jsx          # Entry point of the application
+```
+
+## ⚙️ Environment Variables
+
+Make sure to set up a .env file at the root with your Supabase credentials:
+
+```ini
+VITE_SUPABASE_URL=your-supabase-url
+VITE_SUPABASE_ANON_KEY=your-anon-key
+```
+
+## 📦 Build for Production
+
+```bash
+npm run build
+```
+
+## 🧹 Lint & Format
+
+```bash
+npm run lint
+```
+
+## 📝 License
+
+MIT
